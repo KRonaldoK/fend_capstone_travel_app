@@ -9,8 +9,11 @@ This repository contains the "Travel Planner" app.
 3. Sign-up at  [pixabay.com](https://pixabay.com/api/docs/)
 4. Create a `.env` file in the project root directory
 5. Edit the `.env` file with your API keys:
+
    GEONAMES_USERNAME=***
+
    WEATHERBIT_API_KEY=****
+
    PIXABAY_API_KEY=*****
 
 ## Installing
