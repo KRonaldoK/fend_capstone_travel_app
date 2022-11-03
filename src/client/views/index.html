@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel Planner</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo-text">Travel Planner - Where do you go now?</div>
+        </header>
+        <main>
+            <section class="go">
+                <form class='go-form' onsubmit="return Client.handleGoTripSubmit(event)">
+                    <label class="go-form__destination" for="destination">Desired Trip Location
+                        <input id="destination" type="text" name="destination" value="" placeholder="" required oninvalid="this.setCustomValidity('Please Enter a valid location to go!')" oninput="setCustomValidity('')"/>
+                    </label>
+                    <label class="go-form__departure-date" for="departureDate">Date You Are Leaving
+                        <input id="departureDate" type="date" name="departureDate" required oninvalid="this.setCustomValidity('Please select or inform a date for departure!')" oninput="setCustomValidity('')"/>
+                    </label>
+                    <input class="btn go-form__btn-go" type="submit" name="" value="Go" />
+                </form>
+            </section>
+            <section class="results">
+                <div id="tripInfo"></div>
+            </section>
+            <section class="saved-trips">
+                <div id="savedTripsSection"></div>
+            </section>
+        </main>
+        <footer>
+            <p>Travel Planner - FEND Capstone Project</p>
+        </footer>
+        <!--
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+        -->
+    </body>
+</html>

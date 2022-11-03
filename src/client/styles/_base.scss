@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: $orange-grey-900;
+    background: $orange-grey-050;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    flex: 2;
+}
+
+@media (min-width: 720px) {
+
+}
+
+section.go,
+section.results,
+section.saved-trips {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+input[type='text'],
+input[type='date'] {
+    width: 100%;
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    border: 2px solid $orange-grey-200;
+    border-radius: 3px;
+    &.inputError {
+        border: 2px solid $red-400;
+    }
+}
+
+.btn {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: all ease 0.25s;
+    &:hover {
+        cursor: pointer;
+    }
+}
